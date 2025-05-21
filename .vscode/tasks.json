@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build GAME",
+      "type": "cppbuild",
+      "command": "C:\\mingw64\\bin\\g++.exe",
+      "args": [
+        "-I",
+        "${workspaceFolder}/include",
+        "-I",
+        "${workspaceFolder}/include/SDL2",
+        "-I",
+        "${workspaceFolder}/include/header",
+        "-L",
+        "${workspaceFolder}/lib",
+        "-o",
+        "${workspaceFolder}/main.exe",
+        "${workspaceFolder}/src/*.cpp",
+        "-lmingw32",
+        "-lSDL2main",
+        "-lSDL2",
+        "-lSDL2_image",
+        "-lSDL2_mixer",
+        "-lSDL2_ttf"
+      ],
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "compiler: \"C:\\mingw64\\bin\\g++.exe\""
+    }
+  ]
+}
